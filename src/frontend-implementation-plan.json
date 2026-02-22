@@ -1,0 +1,38 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Remove non-vegetarian dishes from recipe collection",
+  "requirements": [
+    {
+      "id": "REQ-10",
+      "summary": "Verify frontend recipe gallery and detail pages display vegetarian-only recipes without code changes",
+      "acceptanceCriteria": [
+        "The recipe gallery displays only vegetarian recipes after backend update",
+        "Recipe filtering and search functionality works correctly with the reduced recipe set",
+        "No non-vegetarian dishes appear in search results or filtered views"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/RecipeGallery.tsx",
+          "operation": "modify",
+          "description": "Add verification that the recipe gallery correctly displays the filtered vegetarian-only recipe collection. Ensure the existing filtering logic (search, cuisine, difficulty, time) continues to work with the reduced recipe set. No functional changes are needed since the component fetches recipes from the backend which will now return only vegetarian dishes."
+        },
+        {
+          "path": "frontend/src/pages/RecipeDetail.tsx",
+          "operation": "modify",
+          "description": "Add verification that the recipe detail page correctly handles the vegetarian-only recipe collection. Ensure navigation and recipe metadata display work correctly with the filtered backend data. No functional changes are needed since the component fetches individual recipes from the backend."
+        },
+        {
+          "path": "frontend/src/components/RecipeFilters.tsx",
+          "operation": "modify",
+          "description": "Verify that search and filter controls (cuisine type, difficulty level, cooking time) continue to function correctly with the reduced vegetarian-only recipe set. Ensure active filter counts and clear functionality work as expected. No functional changes required."
+        },
+        {
+          "path": "frontend/src/hooks/useRecipeFilters.ts",
+          "operation": "modify",
+          "description": "Verify that the recipe filtering hook's memoized computation correctly processes the vegetarian-only recipe collection. Ensure search term matching, cuisine filtering, difficulty filtering, and time range filtering all work properly with the reduced dataset. No functional changes required."
+        }
+      ]
+    }
+  ]
+}

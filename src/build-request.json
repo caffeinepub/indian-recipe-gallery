@@ -1,0 +1,55 @@
+{
+  "kind": "build_request",
+  "title": "Remove non-vegetarian dishes from recipe collection",
+  "projectName": "RasoiVidya",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-9",
+      "text": "Remove all non-vegetarian recipes from the hardcoded recipe list in backend/main.mo, including Butter Chicken, Chicken Biryani, and any other meat-based dishes",
+      "target": "backend",
+      "source": {
+        "messageIds": [
+          "msg-7"
+        ],
+        "quotes": [
+          "Remove non veg dishes"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The recipe list contains only vegetarian dishes",
+        "All meat, poultry, fish, and seafood recipes are removed",
+        "The remaining recipes maintain their complete structure with name, description, cuisine type, difficulty, cooking time, ingredients, and video URL"
+      ]
+    },
+    {
+      "id": "REQ-10",
+      "text": "Ensure the frontend recipe gallery and detail pages continue to display the filtered vegetarian-only recipe collection without any code changes",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-7"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The recipe gallery displays only vegetarian recipes after backend update",
+        "Recipe filtering and search functionality works correctly with the reduced recipe set",
+        "No non-vegetarian dishes appear in search results or filtered views"
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not modify the Recipe type structure in backend/main.mo",
+    "Preserve all existing frontend filtering and search functionality",
+    "Maintain the existing Indian-inspired visual theme and layout"
+  ],
+  "nonGoals": [
+    "Adding new vegetarian recipes to replace removed ones",
+    "Implementing a vegetarian/non-vegetarian filter toggle",
+    "Changing the video URLs or recipe metadata structure"
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

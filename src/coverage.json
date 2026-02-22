@@ -1,0 +1,45 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-21T17:08:51.173Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 2,
+    "implemented": 0,
+    "items": [
+      {
+        "id": "REQ-10",
+        "summary": "Ensure the frontend recipe gallery and detail pages continue to display the filtered vegetarian-only recipe collection without any code changes",
+        "status": "missing",
+        "plannedFiles": [
+          "frontend/src/pages/RecipeGallery.tsx",
+          "frontend/src/pages/RecipeDetail.tsx",
+          "frontend/src/components/RecipeFilters.tsx",
+          "frontend/src/hooks/useRecipeFilters.ts"
+        ],
+        "matchedFiles": []
+      },
+      {
+        "id": "REQ-9",
+        "summary": "Remove all non-vegetarian recipes from the hardcoded recipe list in backend/main.mo, including Butter Chicken, Chicken Biryani, and any other meat-based dishes",
+        "status": "unknown",
+        "plannedFiles": [],
+        "matchedFiles": []
+      }
+    ]
+  },
+  "changedFiles": [
+    "backend/main.mo",
+    "build-request.json",
+    "build-template/README.md",
+    "feature_evidence.json",
+    "frontend-implementation-plan.json",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}

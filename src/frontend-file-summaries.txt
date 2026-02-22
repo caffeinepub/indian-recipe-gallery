@@ -1,0 +1,13 @@
+{
+  "frontend/src/App.tsx": "Main application component that sets up TanStack Router with routes for the recipe gallery and recipe detail pages, wrapped in a Layout component.",
+  "frontend/src/components/Layout.tsx": "Layout wrapper component that provides consistent header with hero banner, navigation structure, and footer with attribution across all pages.",
+  "frontend/src/pages/RecipeGallery.tsx": "Main gallery page that displays all recipes in a grid layout with integrated filtering, search functionality, and loading/error states.",
+  "frontend/src/pages/RecipeDetail.tsx": "Detailed recipe view page showing large video player, recipe metadata, ingredients list, and cooking information with navigation back to gallery.",
+  "frontend/src/components/RecipeGrid.tsx": "Responsive grid component that renders recipe cards in a masonry-style layout with staggered animations.",
+  "frontend/src/components/RecipeCard.tsx": "Video-centric recipe card component with hover effects, category icons, difficulty badges, and click navigation to detail view.",
+  "frontend/src/components/RecipeFilters.tsx": "Comprehensive filter component with search input and dropdowns for cuisine type, difficulty level, and cooking time with visual category icons.",
+  "frontend/src/hooks/useQueries.ts": "React Query hooks for fetching all recipes and individual recipes by name from the backend actor.",
+  "frontend/src/hooks/useRecipeFilters.ts": "Custom hook managing filter state and logic for searching and filtering recipes by multiple criteria.",
+  "frontend/src/index.css": "Global styles with Indian-inspired OKLCH color system, custom color tokens (saffron, turmeric, terracotta, emerald), and typography using Playfair Display and Inter fonts.",
+  "frontend/tailwind.config.js": "Tailwind configuration extended with Indian-inspired color palette, custom font families (Playfair Display, Inter), and design tokens for the premium aesthetic."
+}

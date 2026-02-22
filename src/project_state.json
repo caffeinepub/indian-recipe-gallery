@@ -1,0 +1,124 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 5,
+  "summary": "Food recipe app focused on Indian dishes, featuring video-based recipes with innovative UI/UX",
+  "architectural_notes": [
+    "Video-centric recipe presentation",
+    "Indian cuisine as primary content focus",
+    "Emphasis on modern, innovative interface design"
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-build-a-video-centric-recipe-browsing-interface-where-each-recipe-is-displayed-as-a-large-video-card-with-overlay-text-showing-the-recipe-name-and-key-details",
+      "title": "Build a video-centric recipe browsing interface where each recipe is displayed as a large video card with overlay text showing the recipe name and key details",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-an-innovative-grid-or-masonry-layout-for-the-recipe-gallery-with-dynamic-sizing-hover-effects-and-smooth-transitions-between-views",
+      "title": "Implement an innovative grid or masonry layout for the recipe gallery with dynamic sizing, hover effects, and smooth transitions between views",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-detailed-recipe-view-that-displays-the-full-video-prominently-along-with-ingredients-list-cooking-instructions-difficulty-level-and-cooking-time-in-an-aesthetically-pleasing-layout",
+      "title": "Create a detailed recipe view that displays the full video prominently, along with ingredients list, cooking instructions, difficulty level, and cooking time in an aesthetically pleasing layout",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-filtering-and-search-functionality-to-browse-recipes-by-cuisine-type-difficulty-level-cooking-time-or-recipe-name",
+      "title": "Implement filtering and search functionality to browse recipes by cuisine type, difficulty level, cooking time, or recipe name",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-design-a-cohesive-visual-theme-inspired-by-indian-culture-and-culinary-traditions-using-warm-vibrant-colors-such-as-saffron-turmeric-gold-terracotta-deep-red-and-emerald-green-elegant-typography-with-modern-indian-inspired-fonts-and-thoughtful-spacing-that-creates-a-premium-magazine-like-feel",
+      "title": "Design a cohesive visual theme inspired by Indian culture and culinary traditions, using warm, vibrant colors (such as saffron, turmeric gold, terracotta, deep red, and emerald green), elegant typography with modern Indian-inspired fonts, and thoughtful spacing that creates a premium, magazine-like feel",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-render-the-generated-hero-banner-and-recipe-category-icons-as-static-assets-in-frontend-public-assets-generated",
+      "title": "Render the generated hero banner and recipe category icons as static assets in frontend/public/assets/generated",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Display food recipes as videos",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Focus on Indian dishes collection",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Implement innovative UI/UX design",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Create a data model to store recipe information including recipe name, description, cuisine type, difficulty level, cooking time, ingredients list, and video URL",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Populate the app with at least 15 diverse Indian recipes covering various categories such as appetizers, main courses, breads, rice dishes, desserts, and beverages",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Remove non-vegetarian dishes from the recipe collection",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Remove all non-vegetarian recipes from the hardcoded recipe list in backend/main.mo, including Butter Chicken, Chicken Biryani, and any other meat-based dishes",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-8",
+      "summary": "Ensure the frontend recipe gallery and detail pages continue to display the filtered vegetarian-only recipe collection without any code changes",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Indian Recipe Gallery",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}
